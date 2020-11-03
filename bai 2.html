@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let y = parseInt(prompt("Enter number:"));
+    let arr = [1,2,4,7,9,3,5];
+    function findNumIndex(arr,y) {
+        for (let i = 0; i < arr.length; i++) {
+            let index = arr.indexOf(y);
+            if (index !== -1) {
+                alert("Number is in the arr ," + "index = " + index);
+                break;
+            } else {
+                alert("Number is not in the arr");
+                break;
+            }
+        }
+    }
+    findNumIndex(arr,y);
+
+
+
+
+</script>
+</html>

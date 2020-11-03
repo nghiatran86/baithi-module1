@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let str = prompt("Enter string");
+    let arr = ["u","e","o","a","i"];
+    function countVowel(str) {
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+            for (let j = 0; j < arr.length; j++) {
+                if (str[i] === arr[j]) {
+                    count++
+                }
+            }
+        }
+        if (count === 0) {
+            return false;
+        } else {
+            return ("số ký tự nguyên âm là : " + count );
+        }
+    }
+    document.write(countVowel(str));
+</script>
+</html>
